@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockPicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&family=Rubik+Microbe&display=swap" rel="stylesheet">
+ <style>
+    #btn {
+        background-color: #339c77; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+}
+ </style>
+
+</head>
+<body bgcolor="#2cdb9b">
+    <div id="headers">
+
+        <button id="btn">Click Me!</button>
+
+        <h1>This is the stock of the day is TSE:<span id="stock"></span>
+        </h1>
+        
+            <script>
+                function test(){
+                var foodItems = ['ARX', 'ACO.X', 'ARE', 'AEM', 'AGU', 'AIM', 'AC.A', 'ATD.B', 'AGT', 'ALA', 'ACQ', 'BE', 'GBT.A', 'BMO', 'BNS', 'ABX', 'BTE', 'BA', 'BDT', 'BB', 'BBD.B', 'BNP', 'BAM.A', 'BRP', 'CAE', 'CCL.B', 'GIB.A', 'CIX', 'CM', 'CNR', 'CP', 'CFW', 'CCO', 'CWX', 'CF', 'CBY', 'CNQ', 'COS', 'CTC.A', 'CU', 'CWB', 'CAM', 'CFP', 'CFX', 'CPX', 'CAS', 'CYT', 'CLS', 'CVE', 'CG', 'CVL', 'CHR.B', 'CUQ', 'CGX', 'CGO', 'CCA', 'CGL', 'CSU', 'CJR.B', 'BCB', 'CPG', 'DH', 'DOL', 'DDC', 'DII.C', 'ELF', 'ELD', 'EMA', 'EMP.A', 'ENB', 'ECA', 'EFX', 'ERF', 'ESI', 'EIF', 'EXE', 'FFH', 'FTT', 'FCR', 'FN', 'FM', 'FSV', 'FTS', 'GNV', 'MIC', 'WN', 'GEI', 'GIL', 'GLN', 'G', 'GWO', 'HLF', 'HCG', 'HBC', 'HSE', 'IMG', 'IGM', 'IMO', 'IDG', 'IAG', 'IFC', 'IPL', 'IFP.A', 'ITP', 'PJC.A', 'JE', 'KAT', 'KEY', 'K', 'LAS.A', 'LB', 'LNF', 'LTS', 'LNR', 'L', 'LUN', 'MEG', 'MDA', 'MAL', 'MG', 'MBT', 'MFC', 'MFI', 'MRE', 'MX', 'MRU', 'MTL', 'NA', 'NFI', 'NDG', 'NWC', 'OCX', 'OTC', 'OSK', 'PAA', 'PKI', 'PTI', 'PPL', 'PGF', 'PWT', 'PMG', 'PNC.A', 'POT', 'POW', 'PWF', 'PD', 'PBH', 'BIN', 'QBR.B', 'RON', 'RET.A', 'RCL', 'RME', 'RCI.B', 'RY', 'RUS', 'SNC', 'SAP', 'SVY', 'SCC', 'SES', 'SJR.B', 'SCL', 'S', 'SLW', 'STN', 'SJ', 'SLF', 'SOY', 'SU', 'SPB', 'TD', 'T', 'X', 'TBL', 'TLM', 'TCK.B', 'TMB', 'THI', 'TIH', 'TS.B', 'TA', 'TRP', 'TFI', 'TRZ.B', 'TCL.A', 'TCW', 'TDG', 'UNS', 'VET', 'VTN', 'WJX', 'WFT', 'WEF', 'WJA', 'WPK', 'YRI', 'Y', ]
+                var theFood = foodItems[Math.floor(Math.random() * foodItems.length)];
+                document.getElementById("stock").innerHTML = theFood;
+                }
+
+                let btn = document.getElementById("btn");
+                btn.addEventListener('click', event => {
+                    test()
+                })
+
+            </script>
+
+    </div>
+</body>
+</html>
